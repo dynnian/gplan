@@ -21,6 +21,9 @@ LDFLAGS=-ldflags "-X '$(PACKAGE)/internal/version.Get().Version=$(VERSION)' -X '
 # Platforms to build for
 PLATFORMS=windows/amd64 windows/arm64 darwin/amd64 darwin/arm64 linux/amd64 linux/arm64
 
+# GOPATH
+GOPATH := $(shell go env GOPATH)
+
 # Tools
 GOLANGCI_LINT := $(shell command -v golangci-lint 2> /dev/null)
 GOFUMPT := $(shell command -v gofumpt 2> /dev/null)
@@ -48,7 +51,7 @@ deps:
 	fi
 ifndef GOLANGCI_LINT
 	@echo "Installing golangci-lint..."
-	@curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(shell go env GOPATH)/bin v1.60.1
+	@curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(GOPATH)/bin
 endif
 ifndef GOFUMPT
 	@echo "Installing gofumpt..."

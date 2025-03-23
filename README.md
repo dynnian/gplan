@@ -1,6 +1,6 @@
-# clido
+# gplan
 
-Clido is an awesome CLI to-do list management application that helps you keep track of your projects and tasks efficiently.
+gplan is an awesome CLI to-do list management application that helps you keep track of your projects and tasks efficiently.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Clido is an awesome CLI to-do list management application that helps you keep tr
 
 ## About The Project
 
-Clido is a simple yet powerful CLI tool designed to help you manage your projects and tasks effectively from the terminal. Whether you're a developer, a project manager, or just someone who loves to keep things organized, Clido is the perfect tool for you.
+gplan is a simple yet powerful CLI tool designed to help you manage your projects and tasks effectively from the terminal. Whether you're a developer, a project manager, or just someone who loves to keep things organized, gplan is the perfect tool for you.
 
 ### Built With
 
@@ -32,43 +32,43 @@ To get a local copy up and running, follow these simple steps.
 
 ### Installation
 
-You have several options to install Clido:
+You have several options to install gplan:
 
 1. Download the official binary:
 
-   - Get the appropriate binary for your operating system and computer architecture from the [releases page](https://github.com/d4r1us-drk/clido/releases).
+   - Get the appropriate binary for your operating system and computer architecture from the [releases page](https://codeberg.org/dynnian/gplan/releases).
    - Move the binary to a location in your PATH.
 
 2. Install via Go:
 
    ```sh
-   go install github.com/d4r1us-drk/clido@latest
+   go install github.com/d4r1us-drk/gplan@latest
    ```
 
 3. Install using Make:
 
    ```sh
-   git clone https://github.com/d4r1us-drk/clido.git
-   cd clido
+   git clone https://github.com/d4r1us-drk/gplan.git
+   cd gplan
    make install
    ```
 
 ## Usage
 
-Clido allows you to manage projects and tasks with various commands. Below are some usage examples.
+gplan allows you to manage projects and tasks with various commands. Below are some usage examples.
 
 ### Commands
 
 - Create a new project:
 
   ```sh
-  clido new project -n "New Project" -d "Project Description"
+  gplan new project -n "New Project" -d "Project Description"
   ```
 
 - Create a new task with priority:
 
   ```sh
-  clido new task -n "New Task" -d "Task Description" -D "2024-08-15 23:00" -p "Existing Project" -P 1
+  gplan new task -n "New Task" -d "Task Description" -D "2024-08-15 23:00" -p "Existing Project" -P 1
   ```
 
   Priority levels: 1 (High), 2 (Medium), 3 (Low), 4 (None)
@@ -76,43 +76,43 @@ Clido allows you to manage projects and tasks with various commands. Below are s
 - Edit an existing project:
 
   ```sh
-  clido edit project 1 -n "Updated Project Name" -d "Updated Description"
+  gplan edit project 1 -n "Updated Project Name" -d "Updated Description"
   ```
 
 - Edit a task's priority:
 
   ```sh
-  clido edit task 1 -P 2
+  gplan edit task 1 -P 2
   ```
 
 - List all projects:
 
   ```sh
-  clido list projects
+  gplan list projects
   ```
 
 - List tasks by project:
 
   ```sh
-  clido list tasks -p "Project Name"
+  gplan list tasks -p "Project Name"
   ```
 
 - Remove a project:
 
   ```sh
-  clido remove project 1
+  gplan remove project 1
   ```
 
 - Toggle task completion:
 
   ```sh
-  clido toggle 1
+  gplan toggle 1
   ```
 
 For detailed help, use the help command:
 
 ```sh
-clido help
+gplan help
 ```
 
 ## Roadmap
@@ -128,7 +128,7 @@ clido help
 - [ ] Add a config file with customizable options, like database path, date-time format, etc.
 - [ ] Add reminders and notifications (this would require a daemon)
 
-See the [open issues](https://github.com/d4r1us-drk/clido/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://codeberg.org/dynnian/gplan/issues) for a full list of proposed features (and known issues).
 
 ## Contributing
 

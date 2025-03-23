@@ -5,8 +5,8 @@ GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
 GOMOD=$(GOCMD) mod
-BINARY_NAME=clido
-PACKAGE=github.com/d4r1us-drk/clido
+BINARY_NAME=gplan
+PACKAGE=codeberg.org/dynnian/gplan
 
 # Build directory
 BUILD_DIR=build

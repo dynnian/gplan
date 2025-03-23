@@ -16,13 +16,13 @@ func NewCompletionCmd() *cobra.Command {
 
 Bash:
 
-    $ source <(clido completion bash)
+    $ source <(gplan completion bash)
 
     To load completions for each session, execute once:
     Linux:
-    $ clido completion bash > /etc/bash_completion.d/clido
+    $ gplan completion bash > /etc/bash_completion.d/gplan
     macOS:
-    $ clido completion bash > /usr/local/etc/bash_completion.d/clido
+    $ gplan completion bash > /usr/local/etc/bash_completion.d/gplan
 
 Zsh:
 
@@ -32,23 +32,23 @@ Zsh:
     $ echo "autoload -U compinit; compinit" >> ~/.zshrc
 
     To load completions for each session, execute once:
-    $ clido completion zsh > "${fpath[1]}/_clido"
+    $ gplan completion zsh > "${fpath[1]}/_gplan"
 
     You will need to start a new shell for this setup to take effect.
 
 fish:
 
-    $ clido completion fish | source
+    $ gplan completion fish | source
 
     To load completions for each session, execute once:
-    $ clido completion fish > ~/.config/fish/completions/clido.fish
+    $ gplan completion fish > ~/.config/fish/completions/gplan.fish
 
 PowerShell:
 
-    PS> clido completion powershell | Out-String | Invoke-Expression
+    PS> gplan completion powershell | Out-String | Invoke-Expression
 
     To load completions for every new session, run:
-    PS> clido completion powershell > clido.ps1
+    PS> gplan completion powershell > gplan.ps1
     and source this file from your PowerShell profile.
 `, // Detailed usage instructions for each shell
 

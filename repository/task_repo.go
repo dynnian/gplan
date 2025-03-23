@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/d4r1us-drk/clido/models"
+	"codeberg.org/dynnian/gplan/models"
 )
 
 // CreateTask inserts a new task into the database.

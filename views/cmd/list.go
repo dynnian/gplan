@@ -6,9 +6,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/d4r1us-drk/clido/controllers"
-	"github.com/d4r1us-drk/clido/models"
-	"github.com/d4r1us-drk/clido/utils"
+	"codeberg.org/dynnian/gplan/controllers"
+	"codeberg.org/dynnian/gplan/models"
+	"codeberg.org/dynnian/gplan/utils"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
 	"github.com/xlab/treeprint"

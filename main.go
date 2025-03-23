@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/d4r1us-drk/clido/controllers"
-	"github.com/d4r1us-drk/clido/repository"
-	"github.com/d4r1us-drk/clido/views/cmd"
+	"codeberg.org/dynnian/gplan/controllers"
+	"codeberg.org/dynnian/gplan/repository"
+	"codeberg.org/dynnian/gplan/views/cmd"
 )
 
 func run() int {

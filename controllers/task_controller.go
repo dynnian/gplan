@@ -4,9 +4,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/d4r1us-drk/clido/models"
-	"github.com/d4r1us-drk/clido/repository"
-	"github.com/d4r1us-drk/clido/utils"
+	"codeberg.org/dynnian/gplan/models"
+	"codeberg.org/dynnian/gplan/repository"
+	"codeberg.org/dynnian/gplan/utils"
 )
 
 // Error constants for task operations.

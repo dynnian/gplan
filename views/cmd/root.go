@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/d4r1us-drk/clido/controllers"
-	"github.com/d4r1us-drk/clido/internal/version"
+	"codeberg.org/dynnian/gplan/controllers"
+	"codeberg.org/dynnian/gplan/internal/version"
 	"github.com/spf13/cobra"
 )
 
@@ -27,9 +27,9 @@ func NewRootCmd(
 	taskController *controllers.TaskController,
 ) *cobra.Command {
 	rootCmd := &cobra.Command{
-		Use:   "clido",
-		Short: "clido is an awesome CLI to-do list management application",
-		Long: "clido is a simple yet powerful CLI tool designed to help you manage " +
+		Use:   "gplan",
+		Short: "gplan is an awesome CLI to-do list management application",
+		Long: "gplan is a simple yet powerful CLI tool designed to help you manage " +
 			"your projects and tasks effectively from the terminal.",
 	}
 
@@ -49,7 +49,7 @@ func NewRootCmd(
 func NewVersionCmd() *cobra.Command {
 	return &cobra.Command{
 		Use:   "version",
-		Short: "Print the version number of Clido",
+		Short: "Print the version number of gplan",
 		Run: func(cmd *cobra.Command, _ []string) {
 			cmd.Println(version.FullVersion())
 		},

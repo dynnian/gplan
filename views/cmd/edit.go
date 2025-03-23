@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/d4r1us-drk/clido/controllers"
-	"github.com/d4r1us-drk/clido/utils"
+	"codeberg.org/dynnian/gplan/controllers"
+	"codeberg.org/dynnian/gplan/utils"
 	"github.com/spf13/cobra"
 )
 

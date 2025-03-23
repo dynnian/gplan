@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/d4r1us-drk/clido/models"
+	"codeberg.org/dynnian/gplan/models"
 	"gorm.io/gorm"
 )
 

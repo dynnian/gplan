@@ -22,13 +22,13 @@ func NewRepository() (*Repository, error) {
 		if appDataPath == "" {
 			return nil, fmt.Errorf("the APPDATA environment variable is not set")
 		}
-		dbPath = filepath.Join(appDataPath, "clido", "data.db")
+		dbPath = filepath.Join(appDataPath, "gplan", "data.db")
 	} else {
 		homePath := os.Getenv("HOME")
 		if homePath == "" {
 			return nil, fmt.Errorf("the HOME environment variable is not set")
 		}
-		dbPath = filepath.Join(homePath, ".local", "share", "clido", "data.db")
+		dbPath = filepath.Join(homePath, ".local", "share", "gplan", "data.db")
 	}
 
 	dbDir := filepath.Dir(dbPath)

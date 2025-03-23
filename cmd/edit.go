@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/d4r1us-drk/clido/pkg/repository"
-	"github.com/d4r1us-drk/clido/pkg/utils"
+	"codeberg.org/dynnian/gplan/pkg/repository"
+	"codeberg.org/dynnian/gplan/pkg/utils"
 	"github.com/spf13/cobra"
 )
 

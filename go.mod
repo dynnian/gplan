@@ -1,4 +1,4 @@
-module github.com/d4r1us-drk/clido
+module codeberg.org/dynnian/gplan
 
 go 1.22.5
 

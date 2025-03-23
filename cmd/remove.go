@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/d4r1us-drk/clido/pkg/repository"
+	"codeberg.org/dynnian/gplan/pkg/repository"
 	"github.com/spf13/cobra"
 )
 

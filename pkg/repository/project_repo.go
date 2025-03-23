@@ -3,7 +3,7 @@ package repository
 import (
 	"time"
 
-	"github.com/d4r1us-drk/clido/pkg/models"
+	"codeberg.org/dynnian/gplan/pkg/models"
 )
 
 func (r *Repository) CreateProject(project *models.Project) error {

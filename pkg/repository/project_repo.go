@@ -40,8 +40,20 @@ func (r *Repository) GetProjectByID(id int) (*models.Project, error) {
 
 func (r *Repository) GetProjectByName(name string) (*models.Project, error) {
 	project := &models.Project{}
-	err := r.db.QueryRow(`SELECT ID, Name, Description, CreationDate, LastModifiedDate FROM Projects WHERE Name = ?`, name).
-		Scan(&project.ID, &project.Name, &project.Description, &project.CreationDate, &project.LastModifiedDate)
+
+	err := r.db.QueryRow(
+		`SELECT ID,
+	           Name,
+			   Description,
+			   CreationDate,
+			   LastModifiedDate
+		FROM Projects
+		WHERE Name = ?`, name).
+		Scan(&project.ID,
+			&project.Name,
+			&project.Description,
+			&project.CreationDate,
+			&project.LastModifiedDate)
 	if err != nil {
 		return nil, err
 	}
@@ -60,18 +72,24 @@ func (r *Repository) GetAllProjects() ([]*models.Project, error) {
 	var projects []*models.Project
 	for rows.Next() {
 		project := &models.Project{}
-		err := rows.Scan(
+		scanErr := rows.Scan(
 			&project.ID,
 			&project.Name,
 			&project.Description,
 			&project.CreationDate,
 			&project.LastModifiedDate,
 		)
-		if err != nil {
-			return nil, err
+		if scanErr != nil {
+			return nil, scanErr
 		}
 		projects = append(projects, project)
 	}
+
+	// Check for any error that occurred during row iteration
+	if rowErr := rows.Err(); rowErr != nil {
+		return nil, rowErr
+	}
+
 	return projects, nil
 }
 

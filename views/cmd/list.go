@@ -6,9 +6,9 @@ import (
 	"os"
 	"strconv"
 
-	"codeberg.org/dynnian/gplan/controllers"
-	"codeberg.org/dynnian/gplan/models"
-	"codeberg.org/dynnian/gplan/utils"
+	"github.com/dynnian/gplan/controllers"
+	"github.com/dynnian/gplan/models"
+	"github.com/dynnian/gplan/utils"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
 	"github.com/xlab/treeprint"

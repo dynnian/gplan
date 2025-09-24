@@ -1,8 +1,9 @@
-module codeberg.org/dynnian/gplan
+module github.com/dynnian/gplan
 
 go 1.22.5
 
 require (
+	github.com/magefile/mage v1.15.0
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/spf13/cobra v1.8.1
 	github.com/xlab/treeprint v1.2.0

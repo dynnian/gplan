@@ -4,9 +4,9 @@ import (
 	"errors"
 	"time"
 
-	"codeberg.org/dynnian/gplan/models"
-	"codeberg.org/dynnian/gplan/repository"
-	"codeberg.org/dynnian/gplan/utils"
+	"github.com/dynnian/gplan/models"
+	"github.com/dynnian/gplan/repository"
+	"github.com/dynnian/gplan/utils"
 )
 
 // Error constants for task operations.

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"codeberg.org/dynnian/gplan/controllers"
+	"github.com/dynnian/gplan/controllers"
 	"github.com/spf13/cobra"
 )
 

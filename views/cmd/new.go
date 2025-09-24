@@ -3,7 +3,7 @@ package cmd
 import (
 	"errors"
 
-	"codeberg.org/dynnian/gplan/controllers"
+	"github.com/dynnian/gplan/controllers"
 	"github.com/spf13/cobra"
 )
 

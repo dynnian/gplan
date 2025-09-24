@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"codeberg.org/dynnian/gplan/models"
+	"github.com/dynnian/gplan/models"
 )
 
 // CreateProject inserts a new project into the database.

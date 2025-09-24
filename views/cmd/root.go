@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"codeberg.org/dynnian/gplan/controllers"
-	"codeberg.org/dynnian/gplan/internal/version"
+	"github.com/dynnian/gplan/controllers"
+	"github.com/dynnian/gplan/internal/version"
 	"github.com/spf13/cobra"
 )
 

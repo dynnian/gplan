@@ -3,7 +3,7 @@ package repository
 import (
 	"time"
 
-	"codeberg.org/dynnian/gplan/pkg/models"
+	"github.com/dynnian/gplan/pkg/models"
 )
 
 func (r *Repository) CreateTask(task *models.Task) error {

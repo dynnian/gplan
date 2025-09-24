@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"codeberg.org/dynnian/gplan/controllers"
-	"codeberg.org/dynnian/gplan/repository"
-	"codeberg.org/dynnian/gplan/views/cmd"
+	"github.com/dynnian/gplan/controllers"
+	"github.com/dynnian/gplan/repository"
+	"github.com/dynnian/gplan/views/cmd"
 )
 
 func run() int {

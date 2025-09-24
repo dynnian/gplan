@@ -36,19 +36,19 @@ You have several options to install gplan:
 
 1. Download the official binary:
 
-   - Get the appropriate binary for your operating system and computer architecture from the [releases page](https://codeberg.org/dynnian/gplan/releases).
+   - Get the appropriate binary for your operating system and computer architecture from the [releases page](https://github.com/dynnian/gplan/releases).
    - Move the binary to a location in your PATH.
 
 2. Install via Go:
 
    ```sh
-   go install github.com/d4r1us-drk/gplan@latest
+   go install github.com/dynnian/gplan@latest
    ```
 
 3. Install using Make:
 
    ```sh
-   git clone https://github.com/d4r1us-drk/gplan.git
+   git clone https://github.com/dynnian/gplan.git
    cd gplan
    make install
    ```
@@ -128,7 +128,7 @@ gplan help
 - [ ] Add a config file with customizable options, like database path, date-time format, etc.
 - [ ] Add reminders and notifications (this would require a daemon)
 
-See the [open issues](https://codeberg.org/dynnian/gplan/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/dynnian/gplan/issues) for a full list of proposed features (and known issues).
 
 ## Contributing
 
